@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Học Tập</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="dien-dan.html">Diễn đàn</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li class="login"><a href="login.html">Đăng nhập</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+
+    <!-- MAIN LAYOUT -->
+    <div class="container">
+
+        <!-- LEFT MENU -->
+        <aside class="left-colum">
+            <h3>Danh mục</h3>
+            <ul>
+                <li>Từ vựng</li>
+                <li>Ngữ pháp</li>
+                <li>Bài tập</li>
+                <li>Mini Game Học Tập</li>
+                <li>Tài liệu miễn phí</li>
+            </ul>
+        </aside>
+
+        <!-- CONTENT -->
+    <main>
+    <h2>Điểm danh hằng ngày & Thống kê học tập</h2>
+
+    <!-- Điểm danh hằng ngày -->
+    <div class="daily-checkin">
+        <p>Ngày hôm nay: <span id="today-date"></span></p>
+        <button id="checkin-btn">Điểm danh</button>
+        <p id="checkin-msg"></p>
+        <p>Chuỗi giữ lửa (streak): <span id="streak">0</span> ngày</p>
+        <p>EXP hiện tại: <span id="exp">0</span></p>
+    </div>
+
+    <!-- Biểu đồ mức độ học tập -->
+    <div class="progress-chart">
+        <h3>Mức độ học tập (EXP hàng ngày)</h3>
+        <canvas id="expChart" width="500" height="200"></canvas>
+    </div>
+    
+    </main> 
+
+        <aside class="right-colum">
+            <h3>Thông tin</h3>
+            <img src="../images/Geto-Ken.jpg" alt="Avatar" style="width:100%;">
+            <p>Name : <span class="name">Xuan Thiet</span></p>
+            <p>ID : <span class="id">51013124312</span></p>
+            <p>Giớitính : <span>Nam</span></p>
+            <p>EXP : <span class="exp">1000</span></p>
+            <p>Danh hiệu : <span class="danhhieu">Thần đồng</span></p>
+            <p>Bảng xếp hạng : <span class="top">124</span></p>
+            <hr>
+    
+        </aside>
+    
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
